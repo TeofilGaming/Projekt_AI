@@ -1,5 +1,5 @@
 # Projekt_AI
-Projekt dla Andrzeja
+Projekt na Aplikacje Internetowe
 
 Naszym projektem bedxzie kasyno. Stwierdziliśmy że bedzie to fajny pomysł żeby się rozwinąć gdyż możemy dużo sami wymyśleć (np. jakeś gry) oraz daje duże pole do popisu bo tak naprawdę możemy tam wstawić wszystko i nie jesteśmy zbytnio ograniczeni formą projektu. 
 
