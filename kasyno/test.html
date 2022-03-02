@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            html {
+      font-family: arial;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      background-color: #fff;
+      border: 3px solid black;
+      padding: 10px 20px;
+      font-size: 20px;
+
+      transition: .3s;
+    }
+
+    button:hover {
+      background-color: #000;
+      color: white;
+    }
+
+
+    div {
+      float: left;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: cornflowerblue;
+      margin: 10px;
+      line-height: 60px;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+
+    }
+    #r{
+        float: right;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <label>obstaw liczbę od 0 do 10: (niewybranie liczby oznacza przegraną)</label>
+        <input type="number" id='li' max="10" min="0">
+    </form>
+    <br><br><button id="l">Losuj</button>
+    <button onclick="location.reload();" id="r">reset</button>
+</body>
+</html>
+
+<script>
+    
+       var b = document.getElementById('li').value;
+  
+   
+    const result = [];
+   
+    
+    const losowanie = function() {
+
+      
+      if (result.length === 1) return;
+
+     
+      const wynikLosowania = Math.floor(Math.random() * 2+ 1);
+
+  
+
+      const div = document.createElement("div");
+      div.textContent = wynikLosowania;
+      result.push(wynikLosowania); 
+      document.body.appendChild(div);
+
+      if(b=wynikLosowania){
+    alert("wygrałeś!");
+    }
+        else{
+    alert("pregrałeś!");
+}
+    }
+
+
+    
+    const button = document.querySelector("button");
+
+    
+    button.addEventListener("click", losowanie);
+
+</script>
